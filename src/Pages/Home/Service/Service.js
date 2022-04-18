@@ -7,6 +7,8 @@ const Service = ({ service }) => {
         <div>
             <img src={img} alt="" />
             <h2>This is service: {name}</h2>
+            <p>Price: ${price}</p>
+            <p>{description}</p>
         </div>
     );
 };
