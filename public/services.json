@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Custom Photography",
+        "price": "20",
+        "description": "For any custom photo need.",
+        "img": "https://i.ibb.co/PFBnK04/custom-photography.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Event Photography",
+        "price": "200",
+        "description": "To cover any event you can contact us.",
+        "img": "https://i.ibb.co/72cMsxb/event-photography.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Wedding Photography",
+        "price": "500",
+        "description": "We are the best at making your special day even more special.",
+        "img": "https://i.ibb.co/640Qtn5/weading-photograpgy.jpg"
+    }
+]
