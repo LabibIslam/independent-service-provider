@@ -1,9 +1,12 @@
 import React from 'react';
+import Services from '../Services/Services';
 
-const Service = () => {
+const Service = ({ service }) => {
+    const { name, img, description, price } = service;
     return (
         <div>
-            <h2>This is service</h2>
+            <img src={img} alt="" />
+            <h2>This is service: {name}</h2>
         </div>
     );
 };
