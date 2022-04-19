@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -8,20 +8,20 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleSubmit = event => {
-        event.perventDefault();
+        event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
         console.log(email, password);
     }
 
-    const nevigeteToRegister = event => {
-        navigate('/resister')
+    const navigateToRegister = () => {
+        navigate('/register')
     }
 
     return (
         <div className='container w-50 mx-auto mt-2'>
-            <h2 className='text-center'>log in please </h2>
+            <h2 className='text-center'>Login Please </h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -38,12 +38,12 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="dark" type="submit">
+                <Button className='mt-5' variant="dark" type="submit">
                     Submit
                 </Button>
             </Form>
-            <p>
-                New to Uno Photography.<span className='text-dark' onClick={nevigeteToRegister}> Please Register </span>
+            <p className='my-2'>
+                New to Uno Photography.<Link to={'/register'} className='text-muted pe-auto text-decoration-none' onClick={navigateToRegister}> Please Register </Link>
             </p>
         </div>
     );
