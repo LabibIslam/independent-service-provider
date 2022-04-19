@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCxR0ch3h9AY4cYyjUW_IgquQM1pcskdjM",
-    authDomain: "uno-photography.firebaseapp.com",
-    projectId: "uno-photography",
-    storageBucket: "uno-photography.appspot.com",
-    messagingSenderId: "108066324585",
-    appId: "1:108066324585:web:3d02bdd8d3c394fa45a2f8"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
