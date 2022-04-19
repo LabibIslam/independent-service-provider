@@ -16,7 +16,6 @@ const Service = ({ service }) => {
                         <Link to="/checkout">
                             <Button className='bg-dark'>Book Now</Button>
                         </Link>
-
                     </Card.Body>
                 </Card>
             </Row>
