@@ -17,18 +17,21 @@ const Banner = () => {
                     <img
                         className="w-100 h-30"
                         src={weddingphotograpgy}
+                        alt=""
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="w-100 h-30"
                         src={eventphotography}
+                        alt=""
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="w-100 h-30"
                         src={wildlife1}
+                        alt=""
                     />
                 </Carousel.Item>
             </Carousel>
