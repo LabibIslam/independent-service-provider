@@ -1,16 +1,23 @@
 import React from 'react';
-import Services from '../Services/Services';
+import { Button, Card, Container, Row } from 'react-bootstrap';
 
 const Service = ({ service }) => {
     const { name, img, description, price } = service;
     return (
-        <div>
-            <img src={img} alt="" />
-            <h2>This is service: {name}</h2>
-            <p>Price: ${price}</p>
-            <p>{description}</p>
-            <button>Book Now</button>
-        </div>
+        <Container>
+            <Row xs={12} lg={3} className="g-4 justify-content-center">
+                <Card>
+                    <Card.Img variant="top" src={img} />
+                    <Card.Body>
+                        <Card.Title>{name}</Card.Title>
+                        <Card.Text>{description}</Card.Text>
+                        <Card.Text>${price}</Card.Text>
+                        <Button className='button-color'>Book Now</Button>
+                    </Card.Body>
+                </Card>
+            </Row>
+        </Container>
+
     );
 };
 
